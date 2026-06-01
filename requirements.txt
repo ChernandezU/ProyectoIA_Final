@@ -1,0 +1,51 @@
+# Dependencias del Proyecto - HernandezCristian_ProyectoIA
+# Instalar con: pip install -r requirements.txt
+
+
+chromadb==0.4.24
+neo4j==5.18.0
+mcp==0.1.0
+sentence-transformers==2.5.1
+
+# Base de Datos Gráfica
+neo4j==6.2.0
+
+# Base de Datos Vectorial
+chromadb==1.5.9
+
+# Búsqueda de Similitud
+faiss-cpu==1.14.2
+
+# Protocolo MCP para Claude
+mcp==1.27.2
+
+# Manipulación de Datos
+pandas==3.0.3
+numpy==2.4.6
+
+# Peticiones HTTP
+requests==2.34.2
+
+# Variables de Entorno
+python-dotenv==1.2.2
+
+# Validación de Datos
+pydantic==2.13.4
+
+# Servidor Web (para MCP)
+uvicorn==0.48.0
+
+# Logging y Monitoreo
+python-json-logger==2.0.7
+
+# Testing
+pytest==8.0.1
+pytest-asyncio==0.23.2
+
+# Desarrollo
+black==24.4.2
+flake8==7.0.0
+mypy==1.10.0
+
+# Documentación
+sphinx==7.3.7

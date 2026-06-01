@@ -1,0 +1,37 @@
+[
+  {
+    "id": "accion_001",
+    "nombre": "recuperar_informacion",
+    "descripcion": "Recupera información relevante de la base de datos vectorial",
+    "parametros": {
+      "query": "string",
+      "top_k": "integer",
+      "threshold": "float"
+    },
+    "retorna": "List[Document]",
+    "precedentes": []
+  },
+  {
+    "id": "accion_002",
+    "nombre": "explorar_grafo",
+    "descripcion": "Explora relaciones en el grafo de conocimiento",
+    "parametros": {
+      "nodo_inicio": "string",
+      "profundidad": "integer",
+      "filtro": "string"
+    },
+    "retorna": "List[Node]",
+    "precedentes": ["accion_001"]
+  },
+  {
+    "id": "accion_003",
+    "nombre": "generar_respuesta",
+    "descripcion": "Genera una respuesta usando el contexto recuperado",
+    "parametros": {
+      "contexto": "List[Document]",
+      "pregunta": "string"
+    },
+    "retorna": "string",
+    "precedentes": ["accion_001", "accion_002"]
+  }
+]
